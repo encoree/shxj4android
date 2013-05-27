@@ -8,5 +8,8 @@
     <string name="title_activity_detail">DetailActivity</string>
     <string name="title_activity_shopping_cart">ShoppingCartActivity</string>
     <string name="title_activity_info">InfoActivity</string>
+    <string name="text_view_shopcart">查看购物车</string>
+    <string name="text_view_info">管理我的信息</string>
+    <string name="text_you">含邮费</string>
 
 </resources>

@@ -1,6 +1,9 @@
 package holaivy.pri.shop.data;
 
-public class ShopItemData {
+import java.io.Serializable;
+
+public class ShopItemData implements Serializable {
+	private static final long serialVersionUID = 7844058966551977067L;
 	private String l; // 标题
 	private String p; // 价格
 	private String c; // 描述
@@ -8,6 +11,22 @@ public class ShopItemData {
 	private String f;// 图片文件
 	private String id;
 	private boolean y;// 是否含邮费
+
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
+	public boolean isY() {
+		return y;
+	}
+
+	public void setY(boolean y) {
+		this.y = y;
+	}
 
 	public String getL() {
 		return l;

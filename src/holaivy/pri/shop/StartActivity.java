@@ -1,25 +1,31 @@
 package holaivy.pri.shop;
 
+import holaivy.pri.shop.constant.ShopConstant;
 import holaivy.pri.shop.data.ShopItemBuilder;
 import holaivy.pri.shop.data.ShopItemData;
 import ivy.android.view.adapter.DefaultListAdapter;
 
 import java.util.List;
 
-import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 
-public class StartActivity extends Activity {
+public class StartActivity extends ShopBaseActivity {
 
 	private ListView listView;
 	private ShopAdapter adapter;
+	private Button button1;
+	private Button button2;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +34,23 @@ public class StartActivity extends Activity {
 		initView();
 		initData();
 		initList();
+		initEvent();
+	}
+
+	private void initEvent() {
+		button1.setOnClickListener(onClickView);
+		button2.setOnClickListener(onClickView);
+		listView.setOnItemClickListener(new OnItemClickListener() {
+			@Override
+			public void onItemClick(AdapterView<?> adapterView, View view,
+					int position, long arg3) {
+				Intent intent = new Intent();
+				intent.setClass(StartActivity.this, DetailActivity.class);
+				intent.putExtra(ShopConstant.ShopItem,
+						adapter.getList().get(position));
+				startActivity(intent);
+			}
+		});
 	}
 
 	private void initList() {
@@ -42,8 +65,22 @@ public class StartActivity extends Activity {
 
 	private void initView() {
 		listView = (ListView) findViewById(R.id.listView1);
-
+		button1 = (Button) findViewById(R.id.button1);
+		button2 = (Button) findViewById(R.id.button2);
 	}
+
+	private View.OnClickListener onClickView = new View.OnClickListener() {
+
+		@Override
+		public void onClick(View v) {
+			if (v == button1) {
+				// 查看 购物车
+			} else if (v == button2) {
+				// 管理我的基本信息
+
+			}
+		}
+	};
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
@@ -73,7 +110,12 @@ public class StartActivity extends Activity {
 				tvLabel.setText(data.getL());
 				tvPrice.setText(data.getP());
 				tvComments.setText(data.getC());
-
+				TextView tvYou = (TextView) view.findViewById(R.id.textViewYou);
+				if (data.isY()) {
+					tvYou.setText(StartActivity.this
+							.getString(R.string.text_you));
+				} else
+					tvYou.setText("");
 			}
 			return view;
 		}

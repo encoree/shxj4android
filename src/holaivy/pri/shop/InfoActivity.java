@@ -4,7 +4,7 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
 
-public class InfoActivity extends Activity {
+public class InfoActivity extends ShopBaseActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
