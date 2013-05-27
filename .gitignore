@@ -1,0 +1,11 @@
+.svn/
+/WebContent/WEB-INF/classes/
+/build/classes/
+.settings/
+/WebContent/flex/
+bin/
+/src/arriettyandroid/
+/src/arriettybi/
+default.properties
+/gen/
+/doc/
