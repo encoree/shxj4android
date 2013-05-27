@@ -4,12 +4,25 @@
     <string name="app_name">holaivy.pri.shop</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
-    <string name="apptitle">新疆干果</string>
-    <string name="title_activity_detail">DetailActivity</string>
-    <string name="title_activity_shopping_cart">ShoppingCartActivity</string>
-    <string name="title_activity_info">InfoActivity</string>
+    <string name="apptitle">新疆干果市场</string>
+    <string name="title_activity_detail">宝贝展示</string>
+    <string name="title_activity_shopping_cart">购物车</string>
+    <string name="title_activity_info">我的空间</string>
     <string name="text_view_shopcart">查看购物车</string>
     <string name="text_view_info">管理我的信息</string>
     <string name="text_you">含邮费</string>
+    <string name="text_jin_pack">市斤装</string>
+    <string name="text_kg_pack">公斤装</string>
+    <string name="text_pack_type">包装类型:</string>
+    <string name="text_jin_unit">斤</string>
+    <string name="text_buy_num">购买数量:</string>
+    <string name="text_default_buy_num">2</string>
+    <string name="text_buy_to_cart">添加到购物车</string>
+    <string name="text_shop_price">价格:</string>
+    <string name="text_example_price">30元/500g</string>
+    <string name="text_example_shop_comments">手剥即开 营养丰富</string>
+    <string name="text_example_shop_label">椒盐味新疆巴旦木</string>
+    <string name="text_empty"/>
+    <string name="text_express_delivery">快递:</string>
 
 </resources>

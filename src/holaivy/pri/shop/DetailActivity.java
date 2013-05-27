@@ -2,6 +2,7 @@ package holaivy.pri.shop;
 
 import holaivy.pri.shop.constant.ShopConstant;
 import holaivy.pri.shop.data.ShopItemData;
+import android.app.Dialog;
 import android.os.Bundle;
 import android.view.Menu;
 import android.widget.TextView;
@@ -47,6 +48,16 @@ public class DetailActivity extends ShopBaseActivity {
 	public boolean onCreateOptionsMenu(Menu menu) {
 		getMenuInflater().inflate(R.menu.detail, menu);
 		return true;
+	}
+
+	@Override
+	@Deprecated
+	protected Dialog onCreateDialog(int id, Bundle args) {
+		
+		
+		
+		return super.onCreateDialog(id, args);
+		
 	}
 
 }
