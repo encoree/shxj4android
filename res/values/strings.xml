@@ -22,7 +22,10 @@
     <string name="text_example_price">30元/500g</string>
     <string name="text_example_shop_comments">手剥即开 营养丰富</string>
     <string name="text_example_shop_label">椒盐味新疆巴旦木</string>
-    <string name="text_empty"/>
+    <string name="text_empty" />
     <string name="text_express_delivery">快递:</string>
+    <string name="text_ok">确定</string>
+    <string name="text_cancel">取消</string>
+    <string name="text_buy_info">请选择商品信息</string>
 
 </resources>
