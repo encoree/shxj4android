@@ -25,11 +25,6 @@
             android:layout_height="wrap_content"
             android:text="商品总价:"
             android:textAppearance="?android:attr/textAppearanceMedium" />
-
-        <View
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
     </LinearLayout>
 
 </LinearLayout>

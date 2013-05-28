@@ -45,7 +45,7 @@
             android:textSize="12sp" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/textViewPrice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="25元/500g"
@@ -104,7 +104,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
-            android:text="市斤装"
+            android:text="@string/text_jin_pack"
             android:textSize="12sp" />
     </LinearLayout>
 

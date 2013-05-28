@@ -75,6 +75,9 @@ public class StartActivity extends ShopBaseActivity {
 		public void onClick(View v) {
 			if (v == button1) {
 				// 查看 购物车
+				Intent intent = new Intent();
+				intent.setClass(StartActivity.this, ShoppingCartActivity.class);
+				startActivity(intent);
 			} else if (v == button2) {
 				// 管理我的基本信息
 
@@ -107,6 +110,9 @@ public class StartActivity extends ShopBaseActivity {
 						.findViewById(R.id.textViewPrice);
 				TextView tvComments = (TextView) view
 						.findViewById(R.id.textViewComments);
+				TextView tvPriceUnit = (TextView) view
+						.findViewById(R.id.textViewPriceUnit);
+				tvPriceUnit.setText(data.getPunit());
 				tvLabel.setText(data.getL());
 				tvPrice.setText(data.getP());
 				tvComments.setText(data.getC());

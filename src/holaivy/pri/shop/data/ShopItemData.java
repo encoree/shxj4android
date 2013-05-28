@@ -6,6 +6,8 @@ public class ShopItemData implements Serializable {
 	private static final long serialVersionUID = 7844058966551977067L;
 	private String l; // 标题
 	private String p; // 价格
+	private String punit;// 价格单位
+
 	private String c; // 描述
 	private int i; // 图片资源
 	private String f;// 图片文件
@@ -68,4 +70,11 @@ public class ShopItemData implements Serializable {
 		this.f = f;
 	}
 
+	public String getPunit() {
+		return punit;
+	}
+
+	public void setPunit(String punit) {
+		this.punit = punit;
+	}
 }
