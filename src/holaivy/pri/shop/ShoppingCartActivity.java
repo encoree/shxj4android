@@ -39,7 +39,7 @@ public class ShoppingCartActivity extends ShopBaseActivity {
 
 	private void initList() {
 		adapter = new ShopCartAdapter(getLayoutInflater(),
-				R.layout.shopcar_item, this, fetchOrderAsList());
+				R.layout.shopcart_item, this, fetchOrderAsList());
 		listView.setAdapter(adapter);
 	}
 

@@ -14,12 +14,13 @@
     <string name="text_jin_pack">市斤装</string>
     <string name="text_kg_pack">公斤装</string>
     <string name="text_pack_type">包装类型:</string>
-    <string name="text_jin_unit">斤</string>
+    <string name="text_jin_unit">市斤</string>
     <string name="text_buy_num">购买数量:</string>
+    <string name="text_numlabel">数量:</string>
     <string name="text_default_buy_num">2</string>
     <string name="text_buy_to_cart">添加到购物车</string>
     <string name="text_shop_price">价格:</string>
-    <string name="text_example_price">30元/500g</string>
+    <string name="text_example_price">25</string>
     <string name="text_example_shop_comments">手剥即开 营养丰富</string>
     <string name="text_example_shop_label">椒盐味新疆巴旦木</string>
     <string name="text_empty" />
@@ -27,5 +28,10 @@
     <string name="text_ok">确定</string>
     <string name="text_cancel">取消</string>
     <string name="text_buy_info">请选择商品信息</string>
+    <string name="text_total_price">总价:</string>
+    <string name="text_example_priceunit">元/500g</string>
+    <string name="text_example_time">2011-01-01 10:00:00</string>
+    <string name="text_example_num">1</string>
+    <string name="text_example_sum">25元</string>
 
 </resources>

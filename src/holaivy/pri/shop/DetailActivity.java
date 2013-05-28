@@ -25,6 +25,7 @@ public class DetailActivity extends ShopBaseActivity {
 	private ShopItemData iData;
 	private TextView textViewLabel;
 	private Button buyButton;
+	private Button viewButton;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -46,11 +47,21 @@ public class DetailActivity extends ShopBaseActivity {
 				showDialog(BUY_DIALOG);
 			}
 		});
+		viewButton.setOnClickListener(new View.OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent();
+				intent.setClass(DetailActivity.this, ShoppingCartActivity.class);
+				startActivity(intent);
+			}
+		});
 	}
 
 	private void initView() {
 		textViewLabel = (TextView) findViewById(R.id.textViewLabel);
 		buyButton = (Button) findViewById(R.id.buttonBuy);
+		viewButton = (Button) findViewById(R.id.buttonView);
 	}
 
 	private void initData() {
