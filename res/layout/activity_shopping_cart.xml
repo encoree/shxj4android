@@ -2,29 +2,59 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/bg_lblue"
     android:orientation="vertical"
     tools:context=".ShoppingCartActivity" >
-
-    <ListView
-        android:id="@+id/listView1"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1" >
-    </ListView>
 
     <LinearLayout
         android:id="@+id/linearLayoutBottom"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:orientation="vertical" >
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp" >
 
         <TextView
             android:id="@+id/textView1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="商品总价:"
-            android:textAppearance="?android:attr/textAppearanceMedium" />
+            android:layout_marginLeft="10dp"
+            android:text="@string/text_shop_total_price"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/textViewTotalPriceTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/text_example_yuantag"
+            android:textColor="#DF2323"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/textViewTotalPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_example_sum"
+            android:textColor="#DF2323"
+            android:textSize="19sp" />
+
+        <Button
+            android:id="@+id/buttonPay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/fill_buy_button"
+            android:text="@string/text_settle"
+            android:textColor="@color/white_text" />
     </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1" >
+    </ListView>
 
 </LinearLayout>

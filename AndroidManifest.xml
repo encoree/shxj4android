@@ -9,6 +9,7 @@
         android:targetSdkVersion="17" />
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
     <application
         android:allowBackup="true"
@@ -17,7 +18,8 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name="holaivy.pri.shop.StartActivity"
-            android:label="@string/apptitle" >
+            android:label="@string/apptitle"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -26,15 +28,28 @@
         </activity>
         <activity
             android:name="holaivy.pri.shop.DetailActivity"
-            android:label="@string/title_activity_detail" >
+            android:label="@string/title_activity_detail"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="holaivy.pri.shop.ShoppingCartActivity"
-            android:label="@string/title_activity_shopping_cart" >
+            android:label="@string/title_activity_shopping_cart"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="holaivy.pri.shop.InfoActivity"
-            android:label="@string/title_activity_info" >
+            android:label="@string/title_activity_info"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="holaivy.pri.shop.OrdersActivity"
+            android:label="@string/title_activity_orders"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="holaivy.pri.act.pcd.RegionSelActivity"
+            android:label="@string/title_activity_orders"
+            android:screenOrientation="portrait" >
         </activity>
     </application>
 

@@ -21,6 +21,7 @@
     <string name="text_buy_to_cart">添加到购物车</string>
     <string name="text_shop_price">价格:</string>
     <string name="text_example_price">25</string>
+    <string name="text_example_price_zero">0</string>
     <string name="text_example_shop_comments">手剥即开 营养丰富</string>
     <string name="text_example_shop_label">椒盐味新疆巴旦木</string>
     <string name="text_empty" />
@@ -33,5 +34,15 @@
     <string name="text_example_time">2011-01-01 10:00:00</string>
     <string name="text_example_num">1</string>
     <string name="text_example_sum">25元</string>
+    <string name="text_example_yuantag">￥</string>
+    <string name="text_settle">去结算</string>
+    <string name="text_shop_total_price">商品总价:</string>
+    <string name="text_name">姓名:</string>
+    <string name="text_tel">电话:</string>
+    <string name="text_province">省份:</string>
+    <string name="title_activity_orders">填写订单</string>
+    <string name="text_sp_addr">区县</string>
+    <string name="text_sp_city">城市</string>
+    <string name="text_sp_province">省份</string>
 
 </resources>

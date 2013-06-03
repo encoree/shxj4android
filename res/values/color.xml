@@ -4,5 +4,10 @@
     <color name="taobao_ch">#FF4400</color>
     <color name="taobao_ch_over">#E53104</color>
     <color name="white_text">#EFEFEF</color>
+    <color name="red_text">#DE1111</color>
+    <color name="bg_lblue">#DCEEF7</color>
+    <color name="jd_red_start">#E63433</color>
+    <color name="jd_red_center">#BC1A1B</color>
+    <color name="jd_red_end">#A80F0F</color>
 
 </resources>

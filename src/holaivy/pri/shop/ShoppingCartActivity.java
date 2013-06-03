@@ -1,19 +1,21 @@
 package holaivy.pri.shop;
 
+import holaivy.pri.shop.data.ShopOrderData;
+import holaivy.pri.shop.data.ShoppingPackType;
+import ivy.android.view.adapter.DefaultListAdapter;
+
 import java.text.SimpleDateFormat;
 import java.util.List;
 import java.util.Locale;
 
-import holaivy.pri.shop.data.ShopOrderData;
-import holaivy.pri.shop.data.ShoppingPackType;
-import ivy.android.view.adapter.DefaultListAdapter;
-import android.R.integer;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -22,6 +24,7 @@ public class ShoppingCartActivity extends ShopBaseActivity {
 	private ListView listView;
 	private ShopCartAdapter adapter = null;
 	private SimpleDateFormat sdf;
+	private Button buttonPay;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -45,9 +48,18 @@ public class ShoppingCartActivity extends ShopBaseActivity {
 
 	private void initView() {
 		listView = (ListView) findViewById(R.id.listView1);
+		buttonPay = (Button) findViewById(R.id.buttonPay);
 	}
 
 	private void initEvent() {
+		buttonPay.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent();
+				intent.setClass(getApplicationContext(), OrdersActivity.class);
+				startActivity(intent);
+			}
+		});
 
 	}
 
