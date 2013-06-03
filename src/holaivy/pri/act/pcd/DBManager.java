@@ -20,7 +20,6 @@ public class DBManager {
 	private File file = null;
 
 	DBManager(Context context) {
-		Log.e("cc", "DBManager");
 		this.context = context;
 	}
 
@@ -29,36 +28,30 @@ public class DBManager {
 				.append(Environment.getDataDirectory().getAbsolutePath())
 				.append("/").append(context.getPackageName()).append("/")
 				.append(DB_NAME).toString();
-		this.database = this.openDatabase(databasePath + "/" + DB_NAME);
+		this.database = this.openDatabase(databasePath);
 	}
 
 	public SQLiteDatabase getDatabase() {
-		Log.e("cc", "getDatabase()");
 		return this.database;
 	}
 
 	private SQLiteDatabase openDatabase(String dbfile) {
 		try {
-			Log.e("cc", "open and return");
 			file = new File(dbfile);
 			if (!file.exists()) {
-				Log.e("cc", "file");
 				InputStream is = context.getResources().openRawResource(
 						R.raw.city);
 				if (is != null) {
-					Log.e("cc", "is null");
 				} else {
 				}
 				FileOutputStream fos = new FileOutputStream(dbfile);
 				if (is != null) {
-					Log.e("cc", "fosnull");
 				} else {
 				}
 				byte[] buffer = new byte[BUFFER_SIZE];
 				int count = 0;
 				while ((count = is.read(buffer)) > 0) {
 					fos.write(buffer, 0, count);
-					Log.e("cc", "while");
 					fos.flush();
 				}
 				fos.close();
@@ -68,10 +61,8 @@ public class DBManager {
 			return database;
 		} catch (FileNotFoundException e) {
 			Log.e("cc", "File not found");
-			e.printStackTrace();
 		} catch (IOException e) {
 			Log.e("cc", "IO exception");
-			e.printStackTrace();
 		} catch (Exception e) {
 			Log.e("cc", "exception " + e.toString());
 		}
@@ -79,7 +70,6 @@ public class DBManager {
 	}
 
 	public void closeDatabase() {
-		Log.e("cc", "closeDatabase()");
 		if (this.database != null)
 			this.database.close();
 	}

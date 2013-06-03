@@ -37,12 +37,18 @@
     <string name="text_example_yuantag">￥</string>
     <string name="text_settle">去结算</string>
     <string name="text_shop_total_price">商品总价:</string>
-    <string name="text_name">姓名:</string>
+    <string name="text_name">收货人:</string>
     <string name="text_tel">电话:</string>
     <string name="text_province">省份:</string>
     <string name="title_activity_orders">填写订单</string>
     <string name="text_sp_addr">区县</string>
     <string name="text_sp_city">城市</string>
     <string name="text_sp_province">省份</string>
+    <string name="text_ok_return">确定返回</string>
+    <string name="text_region">地区:</string>
+    <string name="text_telnum">手机号:</string>
+    <string name="text_addr">地址:</string>
+    <string name="text_pay_sum">应付金额:</string>
+    <string name="text_btn_orders">提交订单</string>
 
 </resources>
